@@ -2,6 +2,8 @@
 
 Run OBS on an ARM device running Linux.
 
+⭐ Support for Pi 4 and his hardware encoder are coming really soon! I already have a build but it doesn't support PipeWire so no Screen Capture for Wayland...
+
 📰 If you want more info about me and the project, you should check the Wiki instead. This README is here to resume quickly the project's goal.
 
 ⚠️ If you're using Windows (Windows for ARM) on your device, an official build already exists: https://github.com/obsproject/obs-studio/releases .
