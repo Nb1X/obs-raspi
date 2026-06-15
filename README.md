@@ -1,33 +1,32 @@
-# obs-raspi
+# obs-rpi
 
-Run OBS on a Raspberry Pi.
+A powerful, stable tool that allows you to run [OBS Studio](https://obsproject.com) on a Raspberry Pi.
 
-⭐ Support for Pi 4 and his hardware encoder are coming really soon! I already have a build but it doesn't support PipeWire so no Screen Capture for Wayland...
+It works really well; for Raspberry Pi models that have a GPU with hardware encoder, you can stream/record with it.
 
-📰 If you want more info about me and the project, you should check the Wiki instead. This README is here to resume quickly the project's goal.
+Supported on these models:
 
-⚠️ If you're using Windows (through WoR project) on your device, an official build already exists: https://github.com/obsproject/obs-studio/releases .
+| | Raspberry Pi 5 | Raspberry Pi 4 | Raspberry Pi 3 | Raspberry Pi 2 | Raspberry Pi 1/Zero |
+| ---------- | ---------- | ---------- | ---------- | ----------- | ----------- |
+| Supported | Yes | Yes | Yes | No | No |
+| Available | Yes | Soon (few days) | Soon (few months) | No | No |
 
-How to use this project:
+Raspberry Pi 4 and 3 will get hardware encoder support when they will be available.
 
-1. Open a terminal and type all these commands in the correct order:
+Plugin support is available for plugins that have ARM64 Linux support, or if they're open source you can compile the ones you want yourself.
 
-`sudo apt update && sudo apt upgrade`
-`sudo apt install wget`
-`wget https://github.com/Nb1X/obs-arm64/releases/download/v32.1.1/install.sh`
-`chmod +x install.sh`
-`./install.sh`
+The plugin [OBS-Multi-RTMP](https://github.com/sorayuki/obs-multi-rtmp) is available and compiled by myself. When you'll launch the install script, you'll be asked if you want to enable it.
 
-Then, the script will do everything for you.
+[![Discord Icon](https://i.ibb.co/39J80KMY/OIP-3785874951-removebg-preview.png)](https://discord.gg/C7eS5fsbSK)
+[![GitHub Icon](https://i.ibb.co/HLpBmjxy/github-removebg-preview.png)](https://github.com/Nb1X)
 
-2. To run OBS, run `obs`.
+🔴 These builds and scripts are ONLY available on 64-bit versions of Raspberry Pi OS!
 
-If you get an error "Failed to initialize video. Your GPU may not be supported, or your graphics drivers may need to be updated." it's because your GPU doesn't support OpenGL 3.3 or more. Try running OBS with this command instead: `MESA_GL_VERSION_OVERRIDE=3.3 obs`.
+‼️ Builds are not supported on Ubuntu. You need to use RPi OS.
 
-If you get errors, issues, glitches or bugs, you can open an Issue, or go in Discussions and open a Discussion.
-If nothing solves the issue, contact me on Discord: @dev_nb1x
+⚠️ This project is not affiliated with the Raspberry Pi Foundation, the OBS Project, Discord or GitHub.
 
-# Licence
+📋 The install scripts are under the GPL-v3.0 Licence.
+OBS Studio is under GPL-v2.0 Licence.
 
-The source code of OBS is not mine. The OBS Project is under GPL-v2.0 Licence.
-If you want to check the source code, it is available on the official OBS GitHub repository: https://github.com/obsproject/obs-studio
+🤝 If you need help, you can ask a question on the [Discord](https://discord.gg/C7eS5fsbSK) or check the Wiki for documentation.
